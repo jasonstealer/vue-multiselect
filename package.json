@@ -1,7 +1,9 @@
 {
-  "name": "vue-multiselect",
+  "name": "@jasonstealer/vue-multiselect",
+  "contributors": [
+    "Jason <jasonstealer@gmail.com.com>"
+  ],
   "version": "2.1.7",
-  "private": false,
   "types": "index.d.ts",
   "scripts": {
     "test": "vue-cli-service test:unit",
@@ -104,7 +106,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shentao/vue-multiselect.git"
+    "url": "git+https://github.com/jasonstealer/vue-multiselect.git"
   },
   "description": "Multiselect component for vue.js",
   "unpkg": "dist/vue-multiselect.min.js",
@@ -116,5 +118,10 @@
     "dist",
     "src",
     "index.d.ts"
-  ]
+  ],
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "dependencies": {}
 }
