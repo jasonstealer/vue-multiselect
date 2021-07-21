@@ -297,6 +297,10 @@ export default {
     tabindex: {
       type: Number,
       default: 0
+    },
+    floatingPlaceholder: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {
@@ -308,7 +312,7 @@ export default {
       )
     },
     isPlaceholderVisible () {
-      return !this.internalValue.length && (!this.searchable || !this.isOpen)
+      return !this.internalValue.length && (!this.searchable || !this.isOpen) || this.floatingPlaceholder
     },
     visibleValues () {
       return this.multiple ? this.internalValue.slice(0, this.limit) : []
