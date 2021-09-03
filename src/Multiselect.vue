@@ -1,7 +1,12 @@
 <template>
   <div
     :tabindex="searchable ? -1 : tabindex"
-    :class="{ 'multiselect--active': isOpen, 'multiselect--disabled': disabled, 'multiselect--above': isAbove }"
+    :class="{
+      'multiselect--active': isOpen,
+      'multiselect--disabled': disabled,
+      'multiselect--above': isAbove,
+      'multiselect--filled': isSingleLabelVisible
+    }"
     @focus="activate()"
     @blur="searchable ? false : deactivate()"
     @keydown.self.down.prevent="pointerForward()"

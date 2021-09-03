@@ -1,7 +1,7 @@
 {
   "name": "@jasonstealer/vue-multiselect",
   "contributors": [
-    "Jason <jasonstealer@gmail.com.com>"
+    "Jason <jasonstealer@gmail.com>"
   ],
   "version": "2.1.7",
   "types": "index.d.ts",
